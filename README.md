@@ -1,6 +1,6 @@
 Three Q(nlogn) Sort Methods
 
-Merge sort is based on the divide-and-conquer paradigm. Its worst-case running time has a lower order of growth than insertion sort. Since we are dealing with subproblems, we state each subproblem as sorting a subarray A[p .. r]. Initially, p = 1 and r = n, but these values change as we recurse through subproblems.
+I. Merge sort is based on the divide-and-conquer paradigm. Its worst-case running time has a lower order of growth than insertion sort. Since we are dealing with subproblems, we state each subproblem as sorting a subarray A[p .. r]. Initially, p = 1 and r = n, but these values change as we recurse through subproblems.
 
 To sort A[p .. r]:
 
@@ -32,7 +32,7 @@ MERGE-SORT (A, p, r)
 4.                 MERGE (A, q + 1, r)                     // Conquer step.
 5.                 MERGE (A, p, q, r)                       // Conquer step.
 
-2. QuickSort
+II QuickSort
 Good points
 
     It is in-place since it uses only a small auxiliary stack.
@@ -71,7 +71,7 @@ The root of the tree A[1] and given index i of a node, the indices of its parent
             RIGHT (i)
                     return 2i + 1
 
- Heap Property
+III Heap Property
 
 In a heap, for every node i other than the root, the value of a node is greater than or equal (at most) to the value of its parent.
 
