@@ -1,4 +1,3 @@
-
 public class HeapSort {
 	private int parent(int i)
 	{
@@ -94,7 +93,7 @@ public class HeapSort {
 		s.sort(test) ;
 		//Tools.print(test);
 		
-System.out.println("  After insert sort the array is:");
+System.out.println("  After  sort the array is:");
 		
 		for (int i=0; i<test.length;i++)
 		{
