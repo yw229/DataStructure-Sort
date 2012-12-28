@@ -34,6 +34,34 @@ public class RotateClockWise
           }
           
     }
+
+public void RotateAnti() // COUNTER ClockWise
+	{
+		for(int layer = 0 ; layer< N/2 ;  layer++)
+		{
+			int start = layer ;
+			int last = N- 1 - start ;
+			for(int j = start ; j <last ; j++ )
+			{
+				int offset = j - start ;
+				int top = max[start][j] ; // keep top layer  
+				
+				// rotate right to top 
+				max[start][j] = max[j][last] ; 
+				
+				// rotate bottom to right
+				max[j][last] = max[last][last - offset] ;
+				
+				// rotate left to bottom 
+				max[last][last-offset] =max[last - offset][start] ;
+				
+				// rotate top to left 
+				max[last-offset][start] = top ; 
+				
+			}
+		}
+
+
     public static void printMat(int [][] max , int M, int N)
 	{
 		for (int i = 0 ; i<M ; i ++)
