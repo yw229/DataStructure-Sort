@@ -60,7 +60,7 @@ Quick sort works by partitioning a given array A[p . . r] into two non-empty sub
                     Recursive call to Quick Sort (A, q + r, r)
 
 
-III HeapSort 
+3. HeapSort 
 The root of the tree A[1] and given index i of a node, the indices of its parent, left child and right child can be computed
  
 
@@ -71,7 +71,7 @@ The root of the tree A[1] and given index i of a node, the indices of its parent
             RIGHT (i)
                     return 2i + 1
 
-Heap Property
+III Heap Property
 
 In a heap, for every node i other than the root, the value of a node is greater than or equal (at most) to the value of its parent.
 
