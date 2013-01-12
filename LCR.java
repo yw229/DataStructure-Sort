@@ -52,3 +52,37 @@ public class LCR // longest common repeated characters
     	System.out.println("longest word is + "  + LCRword(word)) ;
     }
 }
+
+/*
+public class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+      
+        if(strs.length == 0 ) return "" ;
+        
+        int i = 0 ; int m = strs[0].length() ;
+        for( int j = 1 ; j < strs.length; j ++)
+        {
+            if( m > strs[j].length())
+            {
+                m = strs[j].length() ;
+                i = j ;
+            }
+        }
+        String s ="" ;
+        for(int len = 0 ; len< m ; len++)
+        {
+            for(int l = 1 ; l <strs.length ; l ++   )
+            {
+                if(strs[l].charAt(len) != strs[0].charAt(len))
+                    return strs[0].substring(0,len);
+            }
+        }
+        
+        return strs[i] ;
+    }
+
+
+
+*/
